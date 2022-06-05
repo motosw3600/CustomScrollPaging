@@ -13,6 +13,7 @@
 		E97874C6284C66A400CAB2DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97874C5284C66A400CAB2DA /* ViewController.swift */; };
 		E97874CB284C66A500CAB2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97874CA284C66A500CAB2DA /* Assets.xcassets */; };
 		E97874CE284C66A500CAB2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97874CC284C66A500CAB2DA /* LaunchScreen.storyboard */; };
+		E97874D8284C68F100CAB2DA /* CustomScrollPagingFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97874D7284C68F000CAB2DA /* CustomScrollPagingFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E97874CA284C66A500CAB2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E97874CD284C66A500CAB2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E97874CF284C66A500CAB2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97874D7284C68F000CAB2DA /* CustomScrollPagingFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollPagingFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,6 @@
 				693F32C724F7D9D42C529445 /* Pods-CustomScrollPaging.debug.xcconfig */,
 				C63D5076E407F810294781CF /* Pods-CustomScrollPaging.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +83,7 @@
 				E97874D6284C66CC00CAB2DA /* Resources */,
 				E97874D5284C66AD00CAB2DA /* Application */,
 				E97874C5284C66A400CAB2DA /* ViewController.swift */,
+				E97874D7284C68F000CAB2DA /* CustomScrollPagingFlowLayout.swift */,
 			);
 			path = CustomScrollPaging;
 			sourceTree = "<group>";
@@ -222,6 +224,7 @@
 				E97874C6284C66A400CAB2DA /* ViewController.swift in Sources */,
 				E97874C2284C66A400CAB2DA /* AppDelegate.swift in Sources */,
 				E97874C4284C66A400CAB2DA /* SceneDelegate.swift in Sources */,
+				E97874D8284C68F100CAB2DA /* CustomScrollPagingFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
