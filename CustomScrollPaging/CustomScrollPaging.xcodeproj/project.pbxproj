@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BECA3DAB44B5865B601421AA /* Pods_CustomScrollPaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9122488A00A2973088A9B4C9 /* Pods_CustomScrollPaging.framework */; };
 		E97874C2284C66A400CAB2DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97874C1284C66A400CAB2DA /* AppDelegate.swift */; };
 		E97874C4284C66A400CAB2DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97874C3284C66A400CAB2DA /* SceneDelegate.swift */; };
 		E97874C6284C66A400CAB2DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97874C5284C66A400CAB2DA /* ViewController.swift */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		693F32C724F7D9D42C529445 /* Pods-CustomScrollPaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomScrollPaging.debug.xcconfig"; path = "Target Support Files/Pods-CustomScrollPaging/Pods-CustomScrollPaging.debug.xcconfig"; sourceTree = "<group>"; };
+		9122488A00A2973088A9B4C9 /* Pods_CustomScrollPaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomScrollPaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63D5076E407F810294781CF /* Pods-CustomScrollPaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomScrollPaging.release.xcconfig"; path = "Target Support Files/Pods-CustomScrollPaging/Pods-CustomScrollPaging.release.xcconfig"; sourceTree = "<group>"; };
 		E97874BE284C66A400CAB2DA /* CustomScrollPaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomScrollPaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97874C1284C66A400CAB2DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E97874C3284C66A400CAB2DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECA3DAB44B5865B601421AA /* Pods_CustomScrollPaging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005BD62A7E72410712D800DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9122488A00A2973088A9B4C9 /* Pods_CustomScrollPaging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B3C26E10FC5F301C049FBE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				693F32C724F7D9D42C529445 /* Pods-CustomScrollPaging.debug.xcconfig */,
+				C63D5076E407F810294781CF /* Pods-CustomScrollPaging.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E97874B5284C66A400CAB2DA = {
 			isa = PBXGroup;
 			children = (
 				E97874C0284C66A400CAB2DA /* CustomScrollPaging */,
 				E97874BF284C66A400CAB2DA /* Products */,
+				2B3C26E10FC5F301C049FBE6 /* Pods */,
+				005BD62A7E72410712D800DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E97874D2284C66A500CAB2DA /* Build configuration list for PBXNativeTarget "CustomScrollPaging" */;
 			buildPhases = (
+				90701DA6CAFA75AB2ADFBF07 /* [CP] Check Pods Manifest.lock */,
 				E97874BA284C66A400CAB2DA /* Sources */,
 				E97874BB284C66A400CAB2DA /* Frameworks */,
 				E97874BC284C66A400CAB2DA /* Resources */,
+				1595E07700F15A7B43F76210 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1595E07700F15A7B43F76210 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomScrollPaging/Pods-CustomScrollPaging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomScrollPaging/Pods-CustomScrollPaging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomScrollPaging/Pods-CustomScrollPaging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90701DA6CAFA75AB2ADFBF07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomScrollPaging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E97874BA284C66A400CAB2DA /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		E97874D3284C66A500CAB2DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693F32C724F7D9D42C529445 /* Pods-CustomScrollPaging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +385,7 @@
 		};
 		E97874D4284C66A500CAB2DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63D5076E407F810294781CF /* Pods-CustomScrollPaging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
